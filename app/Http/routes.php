@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
@@ -24,6 +24,12 @@ Route::get('/logout', 'RegisterController@getLogout');
 Route::get('/register', 'RegisterController@getRegister');
 
 Route::post('/register', 'RegisterController@postRegister');
+
+Route::get('/home', 'RiskManageController@showAllRisk');
+
+Route::get('/create', 'RiskManageController@createRiskPage');
+
+Route::post('/create', 'RiskManageController@createRisk');
 
 //Route::get('/', 'SitesController@index');
 //

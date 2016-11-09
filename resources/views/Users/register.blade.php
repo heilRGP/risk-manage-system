@@ -5,7 +5,7 @@
     <div class="container">
         {!! Form::open(['url'=>'/register']) !!}
 
-        <div class="col-md-6 col-lg-offset-0">
+        <div class="col-md-6 col-lg-offset-3">
             <div class="panel panel-default">
                 <div class="panel-heading" style="font-family: 微软雅黑; font-size: large">注册</div>
                 <div class="panel-body">

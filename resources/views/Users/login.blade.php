@@ -6,7 +6,7 @@
 
         {!! Form::open(['url'=>'/login']) !!}
 
-        <div class="col-md-5 col-lg-offset-1">
+        <div class="col-md-5 col-lg-offset-3">
             <div class="panel panel-default">
                 <div class="panel-heading" style="font-family: 微软雅黑; font-size: large">登录您的账户</div>
                 <div class="panel-body">

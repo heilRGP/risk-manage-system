@@ -10,9 +10,11 @@
     <file url="file://$PROJECT_DIR$/public" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/Basic" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/resources/views/Basic/guideBar.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/Basic/guidebarIni.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/Basic/loginModel.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/Basic/model.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/Basic/operateModel.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/Users" charset="GBK" />
     <file url="file://$PROJECT_DIR$/resources/views/Users/login.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/Users/register.blade.php" charset="UTF-8" />
