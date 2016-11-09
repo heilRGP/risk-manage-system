@@ -19,18 +19,8 @@
     <![endif]-->
 </head>
 <body class="bg">
-    @yield('login')
-    @yield('register')
-    @yield('home')
-    @yield('health')
-    @yield('advice')
-    @yield('join')
-    @yield('showInfo')
-    @yield('setInfo')
-    @yield('import')
-    @yield('admin')
-    @yield('reply')
-    @yield('statistic')
+    {{--@yield('home')--}}
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

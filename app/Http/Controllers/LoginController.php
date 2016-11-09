@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\Http\Controllers\Controller;
 use App\User;
 use Validator;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
@@ -13,18 +12,18 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 class LoginController extends Controller
 {
 
-    protected $redirectPath = '/home';
+    protected $redirectPath = '/login';
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
     public function login()
     {
-        return view('web.login');
+        return view('Users.login');
     }
 
     public function loginForm()
     {
-        return view('web.login.loginForm');
+        return view('Users.login.loginForm');
     }
 
     /**

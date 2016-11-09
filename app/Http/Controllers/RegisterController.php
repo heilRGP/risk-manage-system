@@ -17,7 +17,7 @@ class RegisterController extends Controller
 
     public function register()
     {
-        return view('web.register');
+        return view('Users.register');
     }
 
 

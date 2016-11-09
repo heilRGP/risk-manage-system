@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateParticipatesTable extends Migration
+class CreateProjectTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,10 @@ class CreateParticipatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('participates', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('userID')->nullable();
-            $table->string('activityID')->nullable();
+        Schema::create('project', function (Blueprint $table) {
+            $table->increments('id');       //项目ID
+            $table->string('name');         //项目名
+            $table->string('description');  //项目描述
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateParticipatesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('participates');
+        //
     }
 }
