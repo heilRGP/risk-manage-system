@@ -23,7 +23,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active" style="font-family: 微软雅黑; font-size: small;"><a
                                     href="{{url("/home")}}">风险列表</a></li>
-                        <li style="font-family: 微软雅黑; font-size: small;"><a href="{{url("/create")}}">提交风险</a></li>
+                        <li class="active" style="font-family: 微软雅黑; font-size: small;"><a href="{{url("/create")}}">提交风险</a></li>
                         <li class="dropdown" style="font-family: 微软雅黑; font-size: small;">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于我们<b class="caret"></b></a>
                             <ul class="dropdown-menu">
