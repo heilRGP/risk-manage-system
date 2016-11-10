@@ -39,7 +39,14 @@ class RiskManageController extends Controller
      */
     public function showAllRisk(){
 
-        $selectRisks = 'select * from risks';
+//        $selectRisks = 'select * from risks';
+//        $selectRisks = 'SELECT * FROM riskmanage.risks r left join riskmanage.users u on r.creator_id = u.id';
+//        $risks = DB::select($selectRisks);
+        $selectRisks = 'select r_id, p_id, creator_id, tracker_id, content, possibility, effect, `trigger`, b.created_at, creator_name, c.u_name as tracker_name, p.name as project_name from
+        (select r.id as r_id, p_id, creator_id, tracker_id, content, possibility, effect, `trigger`, created_at, a.u_name as creator_name
+from risks r left join (select u.id as u_id, name as u_name from users u) a on r.creator_id = a.u_id) b left join
+        (select u.id as u_id, name as u_name from users u) c on b.tracker_id = c.u_id left join project p on b.p_id = p.id';
+
         $risks = DB::select($selectRisks);
 
         return view('RiskManage.showAllRisk', compact('risks'));
