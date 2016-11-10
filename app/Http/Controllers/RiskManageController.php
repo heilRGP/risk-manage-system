@@ -39,7 +39,7 @@ class RiskManageController extends Controller
      */
     public function showAllRisk(){
 
-        $selectRisks = 'select * from risk';
+        $selectRisks = 'select * from risks';
         $risks = DB::select($selectRisks);
 
         return view('RiskManage.showAllRisk', compact('risks'));
